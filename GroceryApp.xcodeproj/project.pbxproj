@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		547B24192D84C63F00A137DC /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 547B24182D84C63F00A137DC /* AWSAPIPlugin */; };
+		547B241B2D84C63F00A137DC /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 547B241A2D84C63F00A137DC /* AWSCognitoAuthPlugin */; };
+		547B241D2D84C63F00A137DC /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 547B241C2D84C63F00A137DC /* AWSS3StoragePlugin */; };
+		547B241F2D84C63F00A137DC /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 547B241E2D84C63F00A137DC /* Amplify */; };
+		547B24212D84C67E00A137DC /* AmplifyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B24202D84C67100A137DC /* AmplifyConfig.swift */; };
+		D3B305100BDD93127768E8D4 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D220838003DA846E6E0890A /* awsconfiguration.json */; };
+		FEE17EAA5370453981839400 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F9FD06D97E08C48CD7317FD4 /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		547B23F82D84C02800A137DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,10 @@
 		547B23E72D84C02700A137DC /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547B23F72D84C02800A137DC /* GroceryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		547B24012D84C02800A137DC /* GroceryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		547B24202D84C67100A137DC /* AmplifyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyConfig.swift; sourceTree = "<group>"; };
+		547B24502D84D51C00A137DC /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		5D220838003DA846E6E0890A /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		F9FD06D97E08C48CD7317FD4 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547B24192D84C63F00A137DC /* AWSAPIPlugin in Frameworks */,
+				547B241F2D84C63F00A137DC /* Amplify in Frameworks */,
+				547B241B2D84C63F00A137DC /* AWSCognitoAuthPlugin in Frameworks */,
+				547B241D2D84C63F00A137DC /* AWSS3StoragePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489D4F31AC20F8DB5122993D /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5D220838003DA846E6E0890A /* awsconfiguration.json */,
+				F9FD06D97E08C48CD7317FD4 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		547B23DE2D84C02700A137DC = {
 			isa = PBXGroup;
 			children = (
+				547B24202D84C67100A137DC /* AmplifyConfig.swift */,
 				547B23E92D84C02700A137DC /* GroceryApp */,
 				547B23FA2D84C02800A137DC /* GroceryAppTests */,
 				547B24042D84C02800A137DC /* GroceryAppUITests */,
 				547B23E82D84C02700A137DC /* Products */,
+				489D4F31AC20F8DB5122993D /* AmplifyConfig */,
+				547B24502D84D51C00A137DC /* amplifyconfiguration.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +142,10 @@
 			);
 			name = GroceryApp;
 			packageProductDependencies = (
+				547B24182D84C63F00A137DC /* AWSAPIPlugin */,
+				547B241A2D84C63F00A137DC /* AWSCognitoAuthPlugin */,
+				547B241C2D84C63F00A137DC /* AWSS3StoragePlugin */,
+				547B241E2D84C63F00A137DC /* Amplify */,
 			);
 			productName = GroceryApp;
 			productReference = 547B23E72D84C02700A137DC /* GroceryApp.app */;
@@ -195,6 +229,9 @@
 			);
 			mainGroup = 547B23DE2D84C02700A137DC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 547B23E82D84C02700A137DC /* Products */;
 			projectDirPath = "";
@@ -212,6 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B305100BDD93127768E8D4 /* awsconfiguration.json in Resources */,
+				FEE17EAA5370453981839400 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547B24212D84C67E00A137DC /* AmplifyConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +439,8 @@
 				DEVELOPMENT_TEAM = QDMJ3W384Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app needs camera access to detect grocery items\"";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs microphone access for user grocery list specification\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +470,8 @@
 				DEVELOPMENT_TEAM = QDMJ3W384Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app needs camera access to detect grocery items\"";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs microphone access for user grocery list specification\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +602,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.46.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		547B24182D84C63F00A137DC /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		547B241A2D84C63F00A137DC /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		547B241C2D84C63F00A137DC /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		547B241E2D84C63F00A137DC /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 547B24172D84C63F00A137DC /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 547B23DF2D84C02700A137DC /* Project object */;
 }

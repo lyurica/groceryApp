@@ -1,0 +1,14 @@
+{
+  "resourceName": "frames",
+  "policyUUID": "0266e69a",
+  "bucketName": "groceryappaf090446bd3f4bed9631aaf026904f73",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

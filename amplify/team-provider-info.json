@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-groceryapp-dev-0c003-authRole",
+      "UnauthRoleArn": "arn:aws:iam::084375588776:role/amplify-groceryapp-dev-0c003-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::084375588776:role/amplify-groceryapp-dev-0c003-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-groceryapp-dev-0c003-deployment",
+      "UnauthRoleName": "amplify-groceryapp-dev-0c003-unauthRole",
+      "StackName": "amplify-groceryapp-dev-0c003",
+      "StackId": "arn:aws:cloudformation:us-west-2:084375588776:stack/amplify-groceryapp-dev-0c003/c323d8a0-0116-11f0-83de-06b7c502db85",
+      "AmplifyAppId": "d20qk6p4e8skjj"
+    },
+    "categories": {
+      "auth": {
+        "groceryapp049345fa": {}
+      },
+      "function": {
+        "S3Trigger17b28c4e": {
+          "deploymentBucketName": "amplify-groceryapp-dev-0c003-deployment",
+          "s3Key": "amplify-builds/S3Trigger17b28c4e-4b76474e364942685266-build.zip"
+        }
+      },
+      "storage": {
+        "frames": {}
+      }
+    }
+  }
+}
